@@ -1,0 +1,170 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    height:100vh;
+    background-image: linear-gradient(to right, #090446, #ffffff);
+justify-items: center;
+}
+.container{
+    margin-top: 30px;
+    flex-direction: column;  
+    width:1000px;
+    height:800px;
+   
+}
+
+
+.heading{
+    padding:20px;
+text-align: center;
+font-size:50px;
+color:white;
+}
+
+.second_heading{
+    display:flex;
+    justify-content:center;
+    gap:17rem;
+    font-size: 20px;
+    font-size: larger;
+    color:white;
+    margin:20px;
+  
+    
+}
+
+.my_weather:hover{
+cursor: pointer;
+background-color: #090446;
+
+}
+
+.search_weather:hover{
+cursor: pointer;
+background-color: #090446;
+
+}
+
+.location{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    font-size:25px;
+    color:white;
+}
+
+  
+
+
+.weather{
+    margin:20px;
+    display: flex;
+ gap:20px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    color:white;
+}
+
+.temperature{
+    font-size:35px;
+}
+
+.weather-property{
+    display:flex;
+  
+    justify-content: center;
+margin-top: 3rem;
+    gap:5rem;
+    border: none;
+    outline: none;
+}
+
+.property{
+    font-size:15px;
+        display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+ color:white;
+}
+
+.property p{
+    font-size:20px;
+}
+
+.search{
+    display:flex;
+    justify-content: center;
+    
+    gap:10px;
+transform: scale(0);
+
+}
+
+
+.search_bar.active {
+    transform: scale(0);
+    opacity:0;
+  }
+  
+  
+.search.active{
+    transform:scale(1);
+}
+
+
+.search_box{
+    width:400px;
+    height:30px;
+    border-radius:8px;
+    border:none;
+    gap:30px;
+    
+ 
+}
+
+.search div{
+    width:30px;
+    height:30px;
+    background-color:wheat;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading i {
+    font-size: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   display: none;
+    transition: opacity 0.3s ease-in-out;
+    animation: rotate 3s linear infinite;
+  }
+  
+  .loading.show-loading i {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  
+  .show.active{
+    transform: scale(0);
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
